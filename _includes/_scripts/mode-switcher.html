@@ -1,4 +1,5 @@
-let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)"); 
+<script>
+  let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)"); 
 let theme = sessionStorage.getItem('theme');
 
 if (systemInitiatedDark.matches) {
@@ -51,3 +52,4 @@ if (theme === "dark") {
 	sessionStorage.setItem('theme', 'light');
 	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
 }
+</script>
