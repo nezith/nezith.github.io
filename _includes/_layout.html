@@ -1,4 +1,6 @@
 <!doctype html>
+{% include _scripts/theme-checker.js %}
+{% include dark-mode-button.html %}
 {% include _blocks/title.html %}
 {% include _blocks/page_class.html %}
 {% include _blocks/sidebar.html %}
@@ -82,5 +84,7 @@
   {% include _third-party/mathjax.html %}
   {% include _third-party/scroll-cookie.html %}
   {% include _third-party/exturl.html %}
+
+  {% include _scripts/mode-switcher.js %}
 </body>
 </html>
