@@ -1,4 +1,5 @@
-const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');	
+<script>
+  const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');	
 
 if (theme === "dark") {
 	document.getElementById("theme-toggle").innerHTML = "Light Mode";
@@ -26,3 +27,4 @@ function modeSwitcher() {
 		document.getElementById("theme-toggle").innerHTML = "Light Mode";
 	}
 }
+</script>
